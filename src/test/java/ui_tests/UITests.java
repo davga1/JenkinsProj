@@ -1,5 +1,4 @@
 package ui_tests;
-
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -39,6 +38,7 @@ public class UITests {
     public void quitDriver() {
         driver.quit();
     }
+
 
 
     @Test
