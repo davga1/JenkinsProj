@@ -88,6 +88,8 @@
                     <properties>
                         <configurationParameters>junit.jupiter.extensions.autodetection.enabled=true</configurationParameters>
                     </properties>
+                    <!--suppress UnresolvedMavenProperty -->
+                    <groups>${includeTags}</groups>
                 </configuration>
             </plugin>
 
