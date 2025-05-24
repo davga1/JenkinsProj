@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-@Tag("api")
+@Tag("API")
 public class ApiTests {
 
     static {
