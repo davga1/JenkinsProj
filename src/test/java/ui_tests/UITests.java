@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-@Tag("ui")
+@Tag("UI")
 public class UITests {
     WebDriver driver;
 
