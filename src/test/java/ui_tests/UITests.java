@@ -19,6 +19,9 @@ public class UITests {
     @BeforeAll
     public void setup() {
         String browser = System.getenv("BROWSER");
+        if (browser == null) {
+            browser = System.getProperty("BROWSER");
+        }
         System.out.println("Running tests with browser: " + browser);
         if (browser == null) {
             browser = "chrome";
