@@ -20,7 +20,9 @@ public class UITests {
     public void setup() {
         String browser = System.getenv("BROWSER");
         System.out.println("Running tests with browser: " + browser);
-
+        if (browser == null) {
+            browser = "chrome";
+        }
         switch (browser.toLowerCase()) {
             case "firefox":
                 driver = new FirefoxDriver();
@@ -28,7 +30,7 @@ public class UITests {
             case "edge":
                 driver = new EdgeDriver();
                 break;
-            default:
+            case "chrome":
                 driver = new ChromeDriver();
                 break;
         }
