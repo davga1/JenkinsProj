@@ -23,9 +23,6 @@ public class UITests {
             browser = System.getProperty("BROWSER");
         }
         System.out.println("Running tests with browser: " + browser);
-        if (browser == null) {
-            browser = "chrome";
-        }
         switch (browser.toLowerCase()) {
             case "firefox":
                 driver = new FirefoxDriver();
@@ -33,7 +30,7 @@ public class UITests {
             case "edge":
                 driver = new EdgeDriver();
                 break;
-            case "chrome":
+            default:
                 driver = new ChromeDriver();
                 break;
         }
