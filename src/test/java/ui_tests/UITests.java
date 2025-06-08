@@ -1,4 +1,5 @@
 package ui_tests;
+
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +28,7 @@ public class UITests {
             case "edge":
                 driver = new EdgeDriver();
                 break;
-            case "chrome":
+            default:
                 driver = new ChromeDriver();
                 break;
         }
@@ -38,7 +39,6 @@ public class UITests {
     public void quitDriver() {
         driver.quit();
     }
-
 
 
     @Test
